@@ -77,7 +77,6 @@ body {
 }
 
 .nav__main-menu li a {
-
     margin: 0 5px;
     color: var(--white);
 }
@@ -137,8 +136,8 @@ body {
 }
 
 .body-landing__contact li {
-    font-size: 3vw;
-    margin: 1vw;
+    font-size: 1.5vw;
+    margin-right: 1vw;
 
 }
 
@@ -150,6 +149,10 @@ body {
     background-color: var(--white);
     border-radius: 16px;
     padding: 8px 16px;
+}
+
+.landing__icon {
+    /* font-size: 1vw; */
 }
 
 /*  */
@@ -177,7 +180,7 @@ body {
 
 .header--text {
     font-size: 2vw;
-    transform: translateY(-7vw);
+    transform: translateY(-9vw);
 }
 
 .story__text,
@@ -227,7 +230,6 @@ body {
     font-size: 15vw;
     opacity: 3%;
     text-align: center;
-    /* padding-top: 10vw; */
 }
 
 .services--main {
@@ -274,11 +276,6 @@ body {
 
 .deals--main {
     text-align: center;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     padding: 2rem 0;
 }
 
@@ -321,7 +318,7 @@ body {
     justify-content: center;
 }
 
-.card {
+.card--items {
     border: none;
     background-color: var(--white);
     border-radius: 10px;
@@ -428,6 +425,7 @@ body {
 .contact--main {
     margin: 0 3.5vw;
     background-color: var(--gray);
+    border-radius: 8px;
 }
 
 .contact__button {
