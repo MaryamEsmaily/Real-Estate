@@ -120,11 +120,29 @@ body {
 @media only screen and (max-width : 991px) {
 
     .navbar-collapse[class*="show"] {
-        background-color: rgba(21, 30, 56, 0.9);
+        background-color: rgba(21, 30, 56, .95);
         padding: 20px 0;
         border-radius: 0 16px 16px 16px;
         margin: 0;
 
+    }
+
+    .nav__link {
+        display: none;
+    }
+
+    .nav__link>ul {
+        padding: 0 !important;
+
+    }
+
+    .nav__link[class*="active"] {
+        justify-content: center;
+        visibility: visible;
+        display: block;
+        color: var(--dark-orange);
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--dark-orange)
     }
 }
 
@@ -327,7 +345,7 @@ body {
     justify-content: space-evenly;
 }
 
-.deal__nav li:hover {
+.deal__nav li:active {
     color: var(--dark-orange);
     padding-bottom: 10px;
     border-bottom: 1px solid var(--dark-orange);
