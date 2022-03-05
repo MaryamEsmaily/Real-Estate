@@ -140,7 +140,7 @@ body {
 }
 
 .body-landing__contact>ul {
-    margin-top: 8%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
 
@@ -148,18 +148,17 @@ body {
 
 .body-landing__contact li {
     font-size: 1.5vw;
-    margin-right: 1vw;
+    margin: 0 1vw 2vw 0;
 
 }
 
 .body-landing__more-info {
     all: unset;
-    position: absolute;
-    left: 46%;
-    bottom: -10px;
     background-color: var(--white);
     border-radius: 16px;
     padding: 8px 16px;
+    transform: translateY(-3vw);
+
 }
 
 
@@ -520,16 +519,35 @@ body {
     .header--text {
         transform: translateY(-10vw);
     }
+
+    .body-landing__more-info {
+        transform: translateY(-2vw);
+
+    }
 }
 
 @media only screen and (max-width : 590px) {
     .header--text {
         transform: translateY(-11vw);
     }
+
+    .body-landing__more-info {
+        transform: translateY(-5vw);
+
+    }
 }
 
 @media only screen and (max-width : 490px) {
     .header--text {
         transform: translateY(-13vw);
+    }
+}
+
+@media only screen and (min-width : 992px) {
+
+
+    .body-landing__more-info {
+        transform: translateY(-1vw);
+
     }
 }
