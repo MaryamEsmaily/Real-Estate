@@ -456,10 +456,14 @@ body {
 }
 
 .contact__input input {
-    margin: 0 0 0.5vw 0;
-    padding: 10px 2px;
+    margin-bottom: 1vw;
+    padding: 10px;
     border: none;
     border-radius: 18px;
+}
+
+.contact--inputs {
+    max-width: 500px;
 }
 
 /*  */
