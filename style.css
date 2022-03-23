@@ -5,7 +5,7 @@
     --light-orange: #f7e7e4;
     --light-blue: #dde3f6;
     --gray: #ebecee;
-    --light-gray: #f2f3f5e5;
+    --light-gray: #f2f3f5;
     --light-green: #aae6b2;
     --green: #24a030;
     --white: #ffffff;
@@ -53,16 +53,7 @@ body {
     justify-content: space-evenly;
 }
 
-.nav__left-side {
-    display: flex;
-
-}
-
-.nav__left-side {
-    display: flex;
-}
-
-.nav__left-side li {
+.constructor {
     padding: 0 10px;
     color: var(--white);
 }
@@ -71,35 +62,37 @@ body {
     font-weight: bolder;
 }
 
-.nav__main-menu {
-    display: flex;
-}
 
-.nav__main-menu li a {
+.nav__main-menu a {
     text-decoration: none;
     margin: 0 5px;
     color: var(--white);
 }
 
-.nav__search {
-    display: flex;
-}
 
-.nav__search li {
+
+.nav__search {
     margin: 0 5px;
     color: var(--white);
 }
 
-.nav__search li input {
+.nav__search input {
     background: transparent;
     border: none;
 }
 
-.nav__search li input:focus {
+.nav__search input:focus {
     all: unset;
     border: none;
     border-bottom: 1px solid var(--gray);
 }
+
+.nav-background {
+    transform: translateY(-100px);
+}
+
+
+
 
 /*  */
 .body-landing {
@@ -126,7 +119,7 @@ body {
 .body-landing__text {
     color: var(--light-orange);
     border-radius: 16px;
-    font-weight: bold;
+    font-size: 13px;
     background-color: var(--dark-orange);
     padding: 2px 8px;
     display: inline-block;
@@ -153,11 +146,16 @@ body {
 }
 
 .body-landing__more-info {
+
     all: unset;
+    position: absolute;
+    width: 100;
     background-color: var(--white);
     border-radius: 16px;
     padding: 8px 16px;
-    transform: translateY(-3vw);
+    color: var(--blue);
+    transform: translate(-50%, 50%);
+    /* transform: translateY(77px); */
 
 }
 
@@ -167,8 +165,9 @@ body {
 
 .story--container {
     color: var(--blue);
-    position: relative;
-    margin: 5vw 15vw 5vw 15vw;
+    z-index: 100000;
+    margin: 0 15vw 5vw 15vw;
+
 }
 
 .bg--text {
@@ -182,7 +181,7 @@ body {
 .insta--main,
 .contact--main {
     text-align: center;
-    padding: 2rem 0;
+    padding-bottom: 3rem;
 }
 
 .header--text {
@@ -194,26 +193,19 @@ body {
 .insta__text {
     color: var(--green);
     border-radius: 16px;
-    font-weight: bold;
+    font-size: 13px;
     background-color: var(--light-green);
     padding: 2px 8px;
     display: inline-block;
 }
 
-.story__child {
-    display: flex;
-    justify-content: center;
-
-}
 
 .description {
     margin: 0 5vw 4vw 5vw;
 }
 
 .story__box {
-    padding: 10px 30px;
     background-color: var(--white);
-    margin: 2rem;
     border-radius: 8px;
 }
 
@@ -249,7 +241,7 @@ body {
 .contact__text {
     color: var(--blue-400);
     border-radius: 16px;
-    font-weight: bold;
+    font-size: 13px;
     background-color: var(--light-blue);
     padding: 2px 8px;
     display: inline-block;
@@ -277,7 +269,7 @@ body {
 }
 
 .option__name {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: lighter;
 }
 
@@ -295,7 +287,7 @@ body {
 .deals__text {
     color: var(--red);
     border-radius: 16px;
-    font-weight: bold;
+    font-size: 13px;
     background-color: var(--light-red);
     border-radius: 16px;
     padding: 2px 8px;
@@ -341,7 +333,7 @@ body {
 .card__img img {
     width: 300px;
     height: 200px;
-    margin-bottom: 1vw;
+    margin-bottom: 5px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -372,6 +364,7 @@ body {
 
 .card__body {
     padding: 0 0 10px 20px;
+    font-size: 13px;
 }
 
 .img--details {
@@ -431,18 +424,21 @@ body {
 }
 
 .insta__pic {
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     margin: 0.5vw;
+
 }
 
 /*  */
 
 
 .contact--main {
-    margin: 0 3.5vw;
+    margin: 0 1rem;
     background-color: var(--gray);
     border-radius: 8px;
+    padding-top: 4rem;
 }
 
 .contact__button {
@@ -478,11 +474,14 @@ body {
 
 .footer__services ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer__services li {
-    margin: 0.5vw 1vw;
+    margin: 0vw 1vw;
 }
+
+/*  */
 
 @media only screen and (max-width : 991px) {
 
@@ -524,10 +523,10 @@ body {
         transform: translateY(-10vw);
     }
 
-    .body-landing__more-info {
+    /* .body-landing__more-info {
         transform: translateY(-2vw);
 
-    }
+    } */
 }
 
 @media only screen and (max-width : 590px) {
@@ -535,10 +534,6 @@ body {
         transform: translateY(-11vw);
     }
 
-    .body-landing__more-info {
-        transform: translateY(-5vw);
-
-    }
 }
 
 @media only screen and (max-width : 490px) {
@@ -547,11 +542,11 @@ body {
     }
 }
 
-@media only screen and (min-width : 992px) {
+/* @media only screen and (min-width : 992px) {
 
 
     .body-landing__more-info {
         transform: translateY(-1vw);
 
     }
-}
+} */

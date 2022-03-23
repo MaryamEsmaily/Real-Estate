@@ -13,486 +13,463 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <div class="nav-container">
-
-        <img src="./assets/images/housePic.jpg" alt="" class="nav__background">
-        <div class="sec-landing p-0">
-            <nav class="navbar navbar-expand-lg navbar-light m-0">
-                <div class="container-fluid">
-
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse main-nav " id="navbarNavAltMarkup">
-                        <div class="navbar-nav align-items-lg-center">
-                            <ul class="nav__left-side">
-                                <li class="icon d-none d-lg-block d-xl-block "><i class="bi bi-list"></i></li>
-                                <li class="nav--constructor">Constructor</li>
-                            </ul>
-
-                            <ul class="nav__search">
-                                <li><i class="bi bi-search text-secondary"></i></li>
-                                <li><input type="text" placeholder="search"></li>
-                            </ul>
-
-                            <ul class="nav__main-menu">
-                                <li class="nav-link"><a href="/">About </a> </li>
-                                <li class="nav-link"><a href="/">Services </a> </li>
-                                <li class="nav-link"><a href="/">Reviews </a> </li>
-                                <li class="nav-link"><a href="/">Contacts </a> </li>
-                            </ul>
+    <div class="main">
+        <!-- header -->
+        <div class="nav-container">
+            <div class="sec-landing">
+                <ul class="d-flex justify-content-evenly align-items-center w-100  ">
+                    <li>
+                        <div class="constructor d-flex">
+                            <div class="nav-icon pe-3"><i class="bi bi-list"></i></div>
+                            <div class="nav--constructor">Constructor</div>
                         </div>
-                    </div>
-                </div>
-        </div>
-        </nav>
-
-        <!-- section 1 - landing -->
-        <div class="body-landing">
-            <div class="body-landing__child">
-                <div class="body-landing__text">
-                    REAL ESTATE
-                </div>
-                <div class="body-landing__header">
-                    <p>Invest on <b>Real Estate</b> With <br>Our company</p>
-                </div>
-                <div class="body-landing__contact">
-                    <ul>
-                        <li class="landing__icon"><i class="bi bi-geo-alt"></i></li>
-                        <li>225 S Test St Brooklyn, NY 11211</li>
-                        <li class="landing__icon"><i class="bi bi-telephone"></i></li>
-                        <li>(929)356-0147</li>
-                        <li class="landing__icon"><i class="bi bi-envelope"></i></li>
-                        <li>hotel@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="d-flex justify-content-center">
-
-        <button class="body-landing__more-info">Show More</button>
-    </div>
-
-
-    <div class="story--container">
-
-        <!-- section 2 - our service -->
-
-        <div class="story--main">
-            <div class="story__text">
-                OUR STORY
-            </div>
-            <div>
-                <p class="bg--text">OUR STORY</p>
-                <p class="header--text">We <b>Will Find</b> the Best Option</p>
-            </div>
-            <div class="description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti dignissimos illo, alias
-                    expedita
-                    quo reprehenderit aliquam esse distinctio omnis.</p>
-            </div>
-            <div class="story__boxs container">
-                <div class="story__child row">
-                    <div class="story__box col ">
-                        <p class="box__header">15 Years</p>
-                        <p class="box__description">In Bussiness</p>
-                    </div>
-                    <div class="story__box col ">
-                        <p class="box__header">$1 Billion</p>
-                        <p class="box__description">Property Brokered</p>
-                    </div>
-                    <div class="story__box col ">
-                        <p class="box__header">10,000</p>
-                        <p class="box__description">Transactions</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- section 3 -->
-
-        <div class="services--container">
-            <div class="services--main">
-                <div class="services__text">
-                    SERVICES
-                </div>
-                <div>
-                    <p class="bg--text">SERVICES</p>
-                    <p class="header--text">Services for <b>Maximum</b> Efficiency</p>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque expedita eum sint voluptate
-                        quam.</p>
-                </div>
-                <div class="services__boxs">
-                    <div class="services__child flex-wrap">
-                        <div class="services__box">
-                            <div class="services__options"><i class=" bi bi-house text-primary"></i>
-                            </div>
-                            <p class="option__name">Home</p>
+                    </li>
+                    <li>
+                        <div class="nav__search d-flex">
+                            <div class=" pe-3"><i class="bi bi-search text-secondary"></i></div>
+                            <div class=""><input type="text" placeholder="search"></div>
                         </div>
-                        <div class="services__box">
-                            <div class="services__options"><i class="bi bi-building text-warning"></i></div>
-                            <p class="option__name">Appartment</p>
+                    </li>
+                    <li>
+                        <div class="d-flex nav__main-menu">
+                            <a class="px-2 " href="/">About </a>
+                            <a class="px-2 " href="/">Services </a>
+                            <a class="px-2 " href="/">Reviews </a>
+                            <a class="px-2 " href="/">Contacts </a>
                         </div>
-                        <div class="services__box">
-                            <div class="services__options"><i class="bi bi-briefcase text-primary"></i></div>
-                            <p class="option__name">Office</p>
-                        </div>
-                        <div class="services__box">
-                            <div class="services__options"><i class="bi bi-house-door text-success"></i></div>
-                            <p class="option__name">Warehouse</p>
-                        </div>
-                        <div class="services__box">
-                            <div class="services__options"><i class="bi bi-cone-striped text-primary"></i></div>
-                            <p class="option__name">Parking</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- section 4 -->
-        <div class="deals--container">
-            <div class="deals--main">
-                <div class="deals__text">
-                    DEALS
-                </div>
-                <div>
-                    <p class="bg--text">DEALS</p>
-                    <p class="header--text">Our <b>Best Deals</b> for Today</p>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque expedita eum sint voluptate
-                        quam.</p>
-                </div>
-            </div>
-            <div class="deal__nav">
-                <ul>
-                    <li class="arrow"><i class="bi bi-arrow-left"></i></li>
-                    <li class="nav__link active">House</li>
-                    <li class="nav__link">Apartment</li>
-                    <li class="nav__link">Office</li>
-                    <li class="nav__link">Warehouse</li>
-                    <li class="nav__link">Parking</li>
-                    <li class="nav__link">Commercial</li>
-                    <li class="arrow"><i class="bi bi-arrow-right"></i></li>
+                    </li>
                 </ul>
             </div>
-
-            <div class="delas__items flex-wrap flex-lg-nowrap ">
-                <div class="items--right">
-                    <div class="card--items">
-                        <div class="card__img"><img src="./assets/images/1.jpg" alt="">
-                            <div class="img--details">
-                                <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
-                                <div class="image--year">15685</div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__header">Modern Glass House</div>
-                            <div class="card__price">$1,625,000</div>
-                            <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
-                            <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
-                        </div>
-
+            <!-- section 1 - landing -->
+            <img src="./assets/images/housePic.jpg" alt="" class="nav__background">
+            <svg class="nav-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f2f3f5" fill-opacity="1"
+                    d="M0,0L120,21.3C240,43,480,85,720,85.3C960,85,1200,43,1320,21.3L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+                </path>
+            </svg>
+            <div class="body-landing">
+                <div class="body-landing__child">
+                    <div class="body-landing__text">
+                        REAL ESTATE
                     </div>
-                    <div class="card--items">
-                        <div class="card__img"><img src="./assets/images/2.jpg" alt="">
-                            <div class="img--details">
-                                <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
-                                <div class="image--year">15685</div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__header">Modern Glass House</div>
-                            <div class="card__price">$1,625,000</div>
-                            <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
-                            <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
-                        </div>
+                    <div class="body-landing__header">
+                        <h1>Invest on <b>Real Estate</b> With <br>Our company</h1>
                     </div>
-                    <div class="card--items">
-                        <div class="card__img"><img src="./assets/images/3.jpg" alt="">
-                            <div class="img--details">
-                                <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
-                                <div class="image--year">15685</div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__header">Modern Glass House</div>
-                            <div class="card__price">$1,625,000</div>
-                            <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
-                            <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
-                        </div>
+                    <div class="body-landing__contact">
+                        <ul>
+                            <li class="landing__icon"><i class="bi bi-geo-alt"></i></li>
+                            <li>225 S Test St Brooklyn, NY 11211</li>
+                            <li class="landing__icon"><i class="bi bi-telephone"></i></li>
+                            <li>(929)356-0147</li>
+                            <li class="landing__icon"><i class="bi bi-envelope"></i></li>
+                            <li>hotel@gmail.com</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="items--center">
-                    <div class="card--items">
-                        <div class="card__img"><img src="./assets/images/4.jpg" alt="">
-                            <div class="img--details">
-                                <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
-                                <div class="image--year">15685</div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__header">Modern Glass House</div>
-                            <div class="card__price">$1,625,000</div>
-                            <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
-                            <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
-                        </div>
-                    </div>
-                    <div class="card--items">
-                        <div class="card__img"><img src="./assets/images/5.jpg" alt="">
-                            <div class="img--details">
-                                <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
-                                <div class="image--year">15685</div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__header">Modern Glass House</div>
-                            <div class="card__price">$1,625,000</div>
-                            <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
-                            <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
-                        </div>
-                    </div>
-                    <div class="card--items">
-                        <div class="card__img"><img src="./assets/images/6.jpg" alt="">
-                            <div class="img--details">
-                                <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
-                                <div class="image--year">15685</div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__header">Modern Glass House</div>
-                            <div class="card__price">$1,625,000</div>
-                            <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
-                            <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="items--left">
-                    <div class="card--items">
-                        <div class="card__img"><img src="./assets/images/7.jpg" alt="">
-                            <div class="img--details">
-                                <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
-                                <div class="image--year">15685</div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__header">Modern Glass House</div>
-                            <div class="card__price">$1,625,000</div>
-                            <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
-                            <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
-                        </div>
-                    </div>
-                    <div class="card--items">
-                        <div class="card__img"><img src="./assets/images/8.jpg" alt="">
-                            <div class="img--details">
-                                <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
-                                <div class="image--year">15685</div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__header">Modern Glass House</div>
-                            <div class="card__price">$1,625,000</div>
-                            <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
-                            <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
-                        </div>
-                    </div>
-                    <div class="card--items">
-                        <div class="card__img"><img src="./assets/images/9.jpg" alt="">
-                            <div class="img--details">
-                                <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
-                                <div class="image--year">15685</div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__header">Modern Glass House</div>
-                            <div class="card__price">$1,625,000</div>
-                            <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
-                            <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
-                        </div>
-                    </div>
+                    <!-- <button class="body-landing__more-info">Show More</button> -->
                 </div>
             </div>
         </div>
-
-        <!-- section 5 -->
-
-        <div class="services--second">
-            <div class="services--main">
-                <div class="services__text">
-                    SERVICES
+        <!--  -->
+        <div class="story--container">
+            <!-- section 2 - our service -->
+            <div class="story--main">
+                <div class="story__text">
+                    OUR STORY
                 </div>
                 <div>
-                    <p class="bg--text">SERVICES</p>
-                    <p class="header--text">Services for <b>Maximum</b> Efficiency</p>
+                    <p class="bg--text">OUR STORY</p>
+                    <h3 class="header--text">We <b>Will Find</b> the Best Option</h3>
                 </div>
                 <div class="description">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam aliquid itaque facilis sint fuga?
-                        Necessitatibus eum qui deleniti. Nostrum, qui possimus. Provident laborum eos dolore.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti dignissimos illo, alias
+                        expedita
+                        quo reprehenderit aliquam esse distinctio omnis.</p>
                 </div>
-                <div class="story__boxs ">
-                    <div class="service__child flex-wrap flex-sm-nowrap">
-                        <div class="user">
-                            <div class="service__box">
-                                <p class="box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Excepturi,
-                                    a?</p>
-                            </div>
-                            <div class="service__user">
-                                <i class="user__pic bi bi-person-circle text-primary"></i>
-                                <div class="user__info">
-                                    <p class="m-1">Herbert Lindsey</p>New York, USA<p></p>
-                                </div>
+                <div class=" container">
+                    <div class="row">
+                        <div class=" col-xs-12 col-md-4 ">
+                            <div class="story__box py-4 m-2">
+                                <p class="box__header">15 Years</p>
+                                <p class="box__description">In Bussiness</p>
                             </div>
                         </div>
-                        <div class="user">
-                            <div class="service__box">
-                                <p class="box__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Non
-                                    eos
-                                    beatae, cupiditate molestiae similique dignissimos.</p>
-                            </div>
-                            <div class="service__user">
-                                <i class="user__pic bi bi-person-circle text-warning"></i>
-                                <div class="user__info">
-                                    <p class="m-1">Herbert Lindsey</p>New York, USA<p></p>
-                                </div>
+                        <div class=" col-xs-12 col-md-4  ">
+                            <div class="story__box py-4 m-2">
+                                <p class="box__header">$1 Billion</p>
+                                <p class="box__description ">Property Brokered</p>
                             </div>
                         </div>
-                        <div class="user">
-                            <div class="service__box">
-                                <p class="box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Excepturi,
-                                    a?</p>
-                            </div>
-                            <div class="service__user">
-                                <i class="user__pic bi bi-person-circle text-success"></i>
-                                <div class="user__info">
-                                    <p class="m-1">Herbert Lindsey</p>New York, USA<p></p>
-                                </div>
+                        <div class="col-xs-12 col-md-4  ">
+                            <div class=" story__box py-4 m-2">
+                                <p class="box__header">10,000</p>
+                                <p class="box__description">Transactions</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- section 6 -->
-        <div class="insta--main">
-            <div class="insta__text">
-                INSTAGRAM
-            </div>
-            <div>
-                <p class="bg--text">INSTA</p>
-                <div class="insta__header header--text">
-                    <i class="bi bi-arrow-left"></i>
-                    <p class="">Listen to <b>Our Customers</b> @realestate</p>
-                    <i class="bi bi-arrow-right"></i>
+            <!-- section 3 -->
+            <div class="services--container">
+                <div class="services--main">
+                    <div class="services__text">
+                        SERVICES
+                    </div>
+                    <div>
+                        <p class="bg--text">SERVICES</p>
+                        <h3 class="header--text">Services for <b>Maximum</b> Efficiency</h3>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque expedita eum sint
+                            voluptate
+                            quam.</p>
+                    </div>
+                    <div class="services__boxs">
+                        <div class="services__child flex-wrap">
+                            <div class="services__box">
+                                <div class="services__options"><i class=" bi bi-house text-primary"></i></div>
+                                <p class="option__name">Home</p>
+                            </div>
+                            <div class="services__box">
+                                <div class="services__options"><i class="bi bi-building text-warning"></i></div>
+                                <p class="option__name">Appartment</p>
+                            </div>
+                            <div class="services__box">
+                                <div class="services__options"><i class="bi bi-briefcase text-primary"></i></div>
+                                <p class="option__name">Office</p>
+                            </div>
+                            <div class="services__box">
+                                <div class="services__options"><i class="bi bi-house-door text-success"></i></div>
+                                <p class="option__name">Warehouse</p>
+                            </div>
+                            <div class="services__box">
+                                <div class="services__options"><i class="bi bi-cone-striped text-primary"></i></div>
+                                <p class="option__name">Parking</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- section 4 -->
+            <div class="deals--container">
+                <div class="deals--main">
+                    <div class="deals__text">
+                        DEALS
+                    </div>
+                    <div>
+                        <p class="bg--text">DEALS</p>
+                        <h3 class="header--text">Our <b>Best Deals</b> for Today</h3>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque expedita eum sint
+                            voluptate
+                            quam.</p>
+                    </div>
+                </div>
+                <div class="deal__nav">
+                    <ul>
+                        <li class="arrow"><i class="bi bi-arrow-left"></i></li>
+                        <li class="nav__link active">House</li>
+                        <li class="nav__link">Apartment</li>
+                        <li class="nav__link">Office</li>
+                        <li class="nav__link">Warehouse</li>
+                        <li class="nav__link">Parking</li>
+                        <li class="nav__link">Commercial</li>
+                        <li class="arrow"><i class="bi bi-arrow-right"></i></li>
+                    </ul>
+                </div>
 
-            <div class="insta__pics">
-                <div class="pics--first">
-                    <img class="insta__pic" src="./assets/images/10.jpg" alt="">
-                    <img class="insta__pic" src="./assets/images/11.jpg" alt="">
-                    <img class="insta__pic" src="./assets/images/12.jpg" alt="">
-                    <img class="insta__pic" src="./assets/images/13.jpg" alt="">
+                <div class="delas__items flex-wrap flex-lg-nowrap ">
+                    <div class="items--right">
+                        <div class="card--items">
+                            <div class="card__img"><img src="./assets/images/1.jpg" alt="">
+                                <div class="img--details">
+                                    <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
+                                    <div class="image--year">15685</div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__header">Modern Glass House</div>
+                                <div class="card__price">$1,625,000</div>
+                                <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
+                                <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
+                            </div>
+                        </div>
+                        <div class="card--items">
+                            <div class="card__img">
+                                <img src="./assets/images/2.jpg" alt="">
+                                <div class="img--details">
+                                    <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
+                                    <div class="image--year">15685</div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__header">Modern Glass House</div>
+                                <div class="card__price">$1,625,000</div>
+                                <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
+                                <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
+                            </div>
+                        </div>
+                        <div class="card--items">
+                            <div class="card__img"><img src="./assets/images/3.jpg" alt="">
+                                <div class="img--details">
+                                    <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
+                                    <div class="image--year">15685</div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__header">Modern Glass House</div>
+                                <div class="card__price">$1,625,000</div>
+                                <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
+                                <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items--center">
+                        <div class="card--items">
+                            <div class="card__img"><img src="./assets/images/4.jpg" alt="">
+                                <div class="img--details">
+                                    <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
+                                    <div class="image--year">15685</div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__header">Modern Glass House</div>
+                                <div class="card__price">$1,625,000</div>
+                                <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
+                                <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
+                            </div>
+                        </div>
+                        <div class="card--items">
+                            <div class="card__img"><img src="./assets/images/5.jpg" alt="">
+                                <div class="img--details">
+                                    <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
+                                    <div class="image--year">15685</div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__header">Modern Glass House</div>
+                                <div class="card__price">$1,625,000</div>
+                                <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
+                                <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
+                            </div>
+                        </div>
+                        <div class="card--items">
+                            <div class="card__img"><img src="./assets/images/6.jpg" alt="">
+                                <div class="img--details">
+                                    <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
+                                    <div class="image--year">15685</div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__header">Modern Glass House</div>
+                                <div class="card__price">$1,625,000</div>
+                                <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
+                                <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items--left">
+                        <div class="card--items">
+                            <div class="card__img"><img src="./assets/images/7.jpg" alt="">
+                                <div class="img--details">
+                                    <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
+                                    <div class="image--year">15685</div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__header">Modern Glass House</div>
+                                <div class="card__price">$1,625,000</div>
+                                <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
+                                <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
+                            </div>
+                        </div>
+                        <div class="card--items">
+                            <div class="card__img"><img src="./assets/images/8.jpg" alt="">
+                                <div class="img--details">
+                                    <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
+                                    <div class="image--year">15685</div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__header">Modern Glass House</div>
+                                <div class="card__price">$1,625,000</div>
+                                <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
+                                <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
+                            </div>
+                        </div>
+                        <div class="card--items">
+                            <div class="card__img"><img src="./assets/images/9.jpg" alt="">
+                                <div class="img--details">
+                                    <div class="image--views"><i class="bi bi-eye-fill m-1"></i>65</div>
+                                    <div class="image--year">15685</div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__header">Modern Glass House</div>
+                                <div class="card__price">$1,625,000</div>
+                                <div class="card__description">14 patrick Brem Ct, Mahwrah NJ07430</div>
+                                <div class="card__options">3 Beds - 2 Baths - 3,450,sqft</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="pics--second">
-                    <img class="insta__pic" src="./assets/images/14.jpg" alt="">
-                    <img class="insta__pic" src="./assets/images/15.jpg" alt="">
-                    <img class="insta__pic" src="./assets/images/16.jpg" alt="">
-                    <img class="insta__pic" src="./assets/images/17.jpg" alt=""></div>
             </div>
-        </div>
+            <!-- section 5 -->
+            <div class="services--second">
+                <div class="services--main">
+                    <div class="services__text">
+                        SERVICES
+                    </div>
+                    <div>
+                        <p class="bg--text">SERVICES</p>
+                        <h3 class="header--text">Services for <b>Maximum</b> Efficiency</h3>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam aliquid itaque facilis sint
+                            fuga?
+                            Necessitatibus eum qui deleniti. Nostrum, qui possimus. Provident laborum eos dolore.</p>
+                    </div>
+                    <div class="story__boxs ">
+                        <div class="service__child flex-wrap flex-sm-nowrap">
+                            <div class="user">
+                                <div class="service__box">
+                                    <p class="box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Excepturi,
+                                        a?</p>
+                                </div>
+                                <div class="service__user">
+                                    <i class="user__pic bi bi-person-circle text-primary"></i>
+                                    <div class="user__info">
+                                        <p class="m-1">Herbert Lindsey</p>New York, USA<p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="service__box">
+                                    <p class="box__description">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit.
+                                        Non
+                                        eos
+                                        beatae, cupiditate molestiae similique dignissimos.</p>
+                                </div>
+                                <div class="service__user">
+                                    <i class="user__pic bi bi-person-circle text-warning"></i>
+                                    <div class="user__info">
+                                        <p class="m-1">Herbert Lindsey</p>New York, USA<p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="service__box">
+                                    <p class="box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Excepturi,
+                                        a?</p>
+                                </div>
+                                <div class="service__user">
+                                    <i class="user__pic bi bi-person-circle text-success"></i>
+                                    <div class="user__info">
+                                        <p class="m-1">Herbert Lindsey</p>New York, USA<p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section 6 -->
+            <div class="insta--main">
+                <div class="insta__text">
+                    INSTAGRAM
+                </div>
+                <div>
+                    <p class="bg--text">INSTA</p>
+                    <div class="insta__header header--text">
+                        <i class="bi bi-arrow-left"></i>
+                        <h3 class="">Listen to <b>Our Customers</b> @realestate</h3>
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
 
-        <!-- section 7 -->
-        <div class="contact--main">
-            <div class="contact__text">
-                CONTACT
-            </div>
-            <div>
-                <p class="bg--text">IN TOUCH</p>
-                <p class="header--text">Get It <b>Touch</b> Now</p>
-            </div>
-            <div class="description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore in qui dolor illum eligendi iusto
-                    praesentium nobis est, vitae explicabo.</p>
-            </div>
-            <!-- <div class="container ">
-                <div class="contact__input row">
-                    <div class="col-sm-12 col-md-6 d-grid"><input type="text" placeholder="FirstName">
+                <div class="insta__pics">
+                    <div class="pics--first">
+                        <img class="insta__pic" src="./assets/images/10.jpg" alt="">
+                        <img class="insta__pic" src="./assets/images/11.jpg" alt="">
+                        <img class="insta__pic" src="./assets/images/12.jpg" alt="">
+                        <img class="insta__pic" src="./assets/images/13.jpg" alt="">
                     </div>
-                    <div class="col-sm-12 col-md-6 d-grid"><input type="text" placeholder="LastName">
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-grid"><input type="text" placeholder="Email Address"></div>
-                    <div class="col-sm-12 col-md-6 d-grid"><input type="text" placeholder="Phone Number">
-                    </div>
-                    <div class="col-12 d-grid"><input type="text" placeholder="Your Message">
-                    </div>
-                </div>
-            </div> -->
-            <div class="container d-flex justify-content-center">
-                <div class="contact--inputs row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="input-group contact__input ">
-                            <input type="text" class="form-control" placeholder="FirstName">
-                            <!-- <span class="input-group-text">$</span> -->
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="input-group contact__input">
-                            <input type="text" class="form-control" placeholder="LastName">
-                            <!-- <span class="input-group-text">$</span> -->
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="input-group contact__input ">
-                            <input type="text" class="form-control" placeholder="Email Address">
-                            <!-- <span class="input-group-text">$</span> -->
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="input-group contact__input ">
-                            <input type="text" class="form-control" placeholder="Phone Number">
-                            <!-- <span class="input-group-text">$</span> -->
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="input-group contact__input col-12">
-                            <input type="text" class="form-control" placeholder="Your Message">
-                            <!-- <span class="input-group-text">$</span> -->
-                        </div>
+                    <div class="pics--second">
+                        <img class="insta__pic" src="./assets/images/14.jpg" alt="">
+                        <img class="insta__pic" src="./assets/images/15.jpg" alt="">
+                        <img class="insta__pic" src="./assets/images/16.jpg" alt="">
+                        <img class="insta__pic" src="./assets/images/17.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <button class="contact__button">Send Request</button>
+            <!-- section 7 -->
+            <div class="contact--main">
+                <div class="contact__text">
+                    CONTACT
+                </div>
+                <div>
+                    <p class="bg--text">IN TOUCH</p>
+                    <h3 class="header--text">Get It <b>Touch</b> Now</h3>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore in qui dolor illum eligendi iusto
+                        praesentium nobis est, vitae explicabo.</p>
+                </div>
+                <div class="container d-flex justify-content-center">
+                    <div class="contact--inputs row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group contact__input ">
+                                <input type="text" class="form-control" placeholder="FirstName">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group contact__input">
+                                <input type="text" class="form-control" placeholder="LastName">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group contact__input ">
+                                <input type="text" class="form-control" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="input-group contact__input ">
+                                <input type="text" class="form-control" placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group contact__input col-12">
+                                <input type="text" class="form-control" placeholder="Your Message">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="contact__button">Send Request</button>
+            </div>
         </div>
-    </div>
-    <!-- footer -->
-    <div class="footer justify-content-md-around flex-wrap justify-content-sm-center">
-        <b>Constructor</b>
-        <div class="footer__services">
-            <ul>
-                <li>Home</li>
-                <li>Gallery</li>
-                <li>Services</li>
-            </ul>
-            <ul>
-                <li>About</li>
-                <li>Barbers</li>
-                <li>Contacts</li>
-            </ul>
-        </div>
-        <div class="footer--stars">
-            <i class="bi bi-star text-primary m-1"></i><i class="bi bi-star text-primary m-1"></i><i
-                class="bi bi-star text-primary m-1"></i><i class="bi bi-star text-primary m-1"></i><i
-                class="bi bi-star text-primary m-1"></i>
+        <!-- footer -->
+        <div class="footer justify-content-md-around flex-wrap justify-content-sm-center">
+            <b>Constructor</b>
+            <div class="footer__services">
+                <ul>
+                    <li>Home</li>
+                    <li>Gallery</li>
+                    <li>Services</li>
+                    <li>About</li>
+                    <li>Barbers</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+            <div class="footer--stars">
+                <i class="bi bi-star text-primary m-1"></i>
+                <i class="bi bi-star text-primary m-1"></i>
+                <i class="bi bi-star text-primary m-1"></i>
+                <i class="bi bi-star text-primary m-1"></i>
+                <i class="bi bi-star text-primary m-1"></i>
+            </div>
         </div>
     </div>
 
