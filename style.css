@@ -327,6 +327,10 @@ body {
     justify-content: center;
 }
 
+.delas__items.active {
+    display: flex;
+}
+
 .card--items {
     border: none;
     background-color: var(--white);
