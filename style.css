@@ -313,16 +313,16 @@ body {
     justify-content: space-evenly;
 }
 
-.deal__nav li:active {
+/* .deal__nav li:active {
     color: var(--dark-orange);
     padding-bottom: 10px;
     border-bottom: 1px solid var(--dark-orange);
-}
+} */
 
 /*  */
 
 .delas__items {
-    display: flex;
+    display: none;
     margin-top: 5vw;
     justify-content: center;
 }
@@ -338,6 +338,7 @@ body {
     width: 300px;
     height: 200px;
     margin-bottom: 5px;
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
 
@@ -525,6 +526,18 @@ body {
     display: none;
 }
 
+.nav__link[class*="active"] {
+
+    color: var(--dark-orange);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--dark-orange)
+}
+
+.house[class*="active"] .house-images {
+    display: none;
+
+}
+
 /*  */
 
 @media (max-width : 991px) {
@@ -542,9 +555,6 @@ body {
         justify-content: center;
         visibility: visible;
         display: block;
-        color: var(--dark-orange);
-        padding-bottom: 10px;
-        border-bottom: 1px solid var(--dark-orange)
     }
 
     .delas__items {
