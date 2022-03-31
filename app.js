@@ -83,6 +83,35 @@
       handleClickArrows("right", links)
     );
   }
+
+  function ratingStars() {
+    const stars = Array.prototype.slice.call(
+      document.querySelectorAll(".rating-star")
+    );
+    stars.forEach((star) => {
+      star.addEventListener("click", () => {
+        let targetStarIndex = stars.indexOf(star);
+        let starLength = stars.length - 1;
+
+        if (star.classList.contains("bi-star")) {
+          for (targetStarIndex; targetStarIndex >= 0; targetStarIndex--) {
+            stars[targetStarIndex].classList.add("bi-star-fill");
+            stars[targetStarIndex].classList.remove("bi-star");
+          }
+        } else
+          for (
+            targetStarIndex;
+            targetStarIndex <= starLength;
+            targetStarIndex++
+          ) {
+            stars[targetStarIndex].classList.remove("bi-star-fill");
+            stars[targetStarIndex].classList.add("bi-star");
+          }
+      });
+    });
+  }
+
   configureDeals();
   configureSidebar();
+  ratingStars();
 })();
