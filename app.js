@@ -111,7 +111,20 @@
     });
   }
 
+  function likeDeals() {
+    const likeIcons = Array.prototype.slice.call(
+      document.querySelectorAll(".like-icon")
+    );
+
+    likeIcons.forEach((icon) => {
+      icon.addEventListener("click", () => {
+        icon.classList.toggle("liked");
+      });
+    });
+  }
+
   configureDeals();
   configureSidebar();
   ratingStars();
+  likeDeals();
 })();
