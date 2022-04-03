@@ -556,15 +556,7 @@ body {
     padding: 3vw;
 }
 
-.footer__services ul {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.footer__services li {
-    margin: 0vw 1vw;
-    cursor: pointer;
-}
 
 .rating-star {
     cursor: pointer;
