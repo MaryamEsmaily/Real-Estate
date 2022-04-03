@@ -257,8 +257,6 @@ body {
     margin-top: 5vw;
 }
 
-
-
 .services__child {
     display: flex;
     justify-content: space-evenly;
@@ -313,14 +311,6 @@ body {
     justify-content: space-evenly;
 }
 
-/* .deal__nav li:active {
-    color: var(--dark-orange);
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--dark-orange);
-} */
-
-/*  */
-
 .delas__items {
     display: none;
     margin-top: 5vw;
@@ -329,6 +319,18 @@ body {
 
 .delas__items.active {
     display: flex;
+}
+
+.items--right {
+    margin: 40px 6px 0 0;
+}
+
+.items--left {
+    margin: 80px 6px 0 0;
+}
+
+.items--center {
+    margin-right: 6px;
 }
 
 .card--items {
@@ -346,19 +348,15 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-.items--right {
-    margin: 40px 6px 0 0;
-
+.card__body {
+    padding: 0 0 10px 20px;
+    font-size: 13px;
 }
 
-.items--left {
-    margin: 80px 6px 0 0;
+.img--details {
+    display: flex;
+    transform: translate(7px, -197px);
 }
-
-.items--center {
-    margin-right: 6px;
-}
-
 
 .card__price {
     font-weight: bold;
@@ -369,16 +367,6 @@ body {
 .card__options {
     margin: 1vw 0;
 
-}
-
-.card__body {
-    padding: 0 0 10px 20px;
-    font-size: 13px;
-}
-
-.img--details {
-    display: flex;
-    transform: translate(7px, -197px);
 }
 
 .image--views,
@@ -398,13 +386,17 @@ body {
     border-radius: 50%;
     position: absolute;
     right: 10px;
+    opacity: 0;
 }
 
 .like-icon.liked {
     background-color: var(--orange);
+    opacity: 1;
 }
 
-/*  */
+.card__img:hover .like-icon {
+    opacity: 1;
+}
 
 
 /*  */
@@ -571,6 +563,11 @@ body {
 
 .footer__services li {
     margin: 0vw 1vw;
+    cursor: pointer;
+}
+
+.rating-star {
+    cursor: pointer;
 }
 
 /*  */
